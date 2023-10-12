@@ -24,7 +24,10 @@ sss
 
 ### Airflow
 
-ss
+After overcoming errors regarding the path of the original CSV file, both for import and export, we correctly made the connection. Now, we have the latest transformed version in the processed_data folder in our AIRFLOW_DOCKER folder.
+
+<img width="1650" alt="Screenshot 2023-08-17 at 09 59 47" src="https://github.com/jgalvalisi/airflow/assets/97465207/88389e33-150a-462a-90c5-a6acc47b4a07">
+
 
 
 ### Superset
