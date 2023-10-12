@@ -5,7 +5,7 @@ In this project, I mixed different tools in order to carry out an ETL process, i
 - Docker: Python, Airflow, and Superset are based on images on Docker
 - Python: create the necessary script to run DAGs within Airflow
 - Airflow: set up an ETL process creating three DAGs
-- Superset: connect with Airflow ETL results and display visualizations
+- Superset: connect with the Airflow ETL results and display visualizations
 
 ### Dataset
 
@@ -24,16 +24,15 @@ With Python, we will accomplish two things:
 #### I) Creating a .py file to run on Docker
 
 #### II) Carrying out data cleaning steps such as:
-   1) Eliminating
-   2) Checking the missing values in the columns
-   3) sss
-   4) Deleting PII data from the dataset
-   5) 
-
+   1) Checking the missing values in the columns
+   2) Replace null values
+   3) Modifying datatypes
+   4) Deriving new variables
+      
 
 ### Airflow
 
-We will perform three DAGs
+We will perform three DAGs and tasks:
 
 #### 1) data_cleaning
 
