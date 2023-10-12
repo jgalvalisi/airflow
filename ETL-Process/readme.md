@@ -19,10 +19,11 @@ ss
 
 ### Python
 
-With Python we will accomplish two things: 
+With Python, we will accomplish two things: 
 
-I) Creating a .py file to run on Docker
-II) Carrying out data cleaning steps such as:
+#### I) Creating a .py file to run on Docker
+
+#### II) Carrying out data cleaning steps such as:
    1) Eliminating
    2) Checking the missing values in the columns
    3) sss
@@ -34,15 +35,15 @@ II) Carrying out data cleaning steps such as:
 
 We will perform three DAGs
 
-1) data_cleaning
+#### 1) data_cleaning
 
 ssss
    
-2) clenaed_data_message
+#### 2) clenaed_data_message
 
 Deploying a message establishing that the data cleaning process was successfully done.
 
-3) load_data
+#### 3) load_data
 
 Load the final and cleaned CSV file ready to be used in Superset.
 
