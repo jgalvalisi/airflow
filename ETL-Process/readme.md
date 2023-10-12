@@ -1,6 +1,6 @@
 ## ETL process using Docker + Python + Airflow + Superset
 
-In this project, I mixed different tools in order to carry out an ETL process, including a brief visualization analysis. In order of appearance, the resources that I have used are:
+In this project, I mixed different tools in order to carry out a brief ETL process based on Apache Airflow, including a brief visualization analysis. In order of appearance, the resources that I have used are:
 
 - Docker: Python, Airflow, and Superset are based on images on Docker
 - Python: create the necessary script to run DAGs within Airflow
@@ -14,21 +14,25 @@ This data set contains booking information for city and resort hotels. It includ
 
 ### Docker
 
-ss
+We will use Docker as a the main tool to XXXXXXXXXXXX
 
+- The first thing we’ll need is the docker-compose.yaml file taken from the official GitHub repo.
+-  SSSS
+-  SSSS
+-  
 
 ### Python
 
 With Python, we will accomplish two things: 
 
-#### I) Creating a .py file to run on Docker
+#### I) Creating a .py file to run on Airflow
 
 #### II) Carrying out data cleaning steps such as:
+
    1) Checking the missing values in the columns
    2) Replace null values
    3) Modifying datatypes
    4) Deriving new variables
-      
 
 ### Airflow
 
@@ -36,7 +40,7 @@ We will perform three DAGs and tasks:
 
 #### 1) data_cleaning
 
-ssss
+As a part of the Transformation of the ETL process, we have performed some changes to the dataset with the aim of getting the CSV file ready for analyisis.
    
 #### 2) clenaed_data_message
 
@@ -53,4 +57,14 @@ Regarding the ETL process, we dealt with some troubles when running our DAGs. In
 
 ### Superset
 
-ss
+- Excecute the Superset image with Docker
+- Access with your localhost and add a Database connection.
+- When we've done that, we will be able to answer the following business questions:
+
+   - What are the nationalities that booked the most? And not considering people from Portugal?
+   - How is the prices evolution over the year considering type of hotel?
+   - Number of reservations per day
+   - Share of reservations pero hotel type (City Hotel or Resort Hotel)
+   - Canelation Distributions according different parameters (xxxxxx)   
+   - Booking changes patterns
+   
