@@ -14,7 +14,7 @@ This data set contains booking information for city and resort hotels. It includ
 
 ### Docker
 
-We will use Docker as a the main tool to XXXXXXXXXXXX
+We will use Docker as the base tool to accomplish our ETL process through Docker images.
 
 - The first thing we’ll need is the docker-compose.yaml file taken from the official GitHub repo.
 -  SSSS
@@ -40,7 +40,7 @@ We will perform three DAGs and tasks:
 
 #### 1) data_cleaning
 
-As a part of the Transformation of the ETL process, we have performed some changes to the dataset with the aim of getting the CSV file ready for analyisis.
+As a part of the Transformation of the ETL process, we have performed some changes to the dataset with the aim of getting the CSV file ready for the corresponding analysis.
    
 #### 2) clenaed_data_message
 
@@ -57,14 +57,14 @@ Regarding the ETL process, we dealt with some troubles when running our DAGs. In
 
 ### Superset
 
-- Excecute the Superset image with Docker
-- Access with your localhost and add a Database connection.
+- Execute the Superset image with Docker
+- Access with your local host and add a Database connection.
 - When we've done that, we will be able to answer the following business questions:
 
    - What are the nationalities that booked the most? And not considering people from Portugal?
-   - How is the prices evolution over the year considering type of hotel?
+   - How are the prices evolution over the year considering the type of hotel?
    - Number of reservations per day
    - Share of reservations pero hotel type (City Hotel or Resort Hotel)
-   - Canelation Distributions according different parameters (xxxxxx)   
+   - Cancellation Distributions according to different parameters (xxxxxx)   
    - Booking changes patterns
    
