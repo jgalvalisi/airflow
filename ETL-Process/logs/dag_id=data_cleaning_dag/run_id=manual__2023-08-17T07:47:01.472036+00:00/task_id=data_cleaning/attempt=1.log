@@ -1,0 +1,102 @@
+[2023-08-17T07:47:36.092+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_cleaning_dag.data_cleaning manual__2023-08-17T07:47:01.472036+00:00 [queued]>
+[2023-08-17T07:47:36.116+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_cleaning_dag.data_cleaning manual__2023-08-17T07:47:01.472036+00:00 [queued]>
+[2023-08-17T07:47:36.118+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-17T07:47:36.165+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): data_cleaning> on 2023-08-17 07:47:01.472036+00:00
+[2023-08-17T07:47:36.194+0000] {standard_task_runner.py:57} INFO - Started process 17249 to run task
+[2023-08-17T07:47:36.221+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'data_cleaning_dag', 'data_cleaning', 'manual__2023-08-17T07:47:01.472036+00:00', '--job-id', '419', '--raw', '--subdir', 'DAGS_FOLDER/data_cleaning_dag/data_cleaning.py', '--cfg-path', '/tmp/tmpj92yzhst']
+[2023-08-17T07:47:36.228+0000] {standard_task_runner.py:85} INFO - Job 419: Subtask data_cleaning
+[2023-08-17T07:47:36.492+0000] {task_command.py:410} INFO - Running <TaskInstance: data_cleaning_dag.data_cleaning manual__2023-08-17T07:47:01.472036+00:00 [running]> on host 77a7d2857de0
+[2023-08-17T07:47:36.749+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_cleaning_dag' AIRFLOW_CTX_TASK_ID='data_cleaning' AIRFLOW_CTX_EXECUTION_DATE='2023-08-17T07:47:01.472036+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-17T07:47:01.472036+00:00'
+[2023-08-17T07:47:37.406+0000] {logging_mixin.py:150} INFO - <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 40060 entries, 0 to 40059
+Data columns (total 31 columns):
+ #   Column                       Non-Null Count  Dtype  
+---  ------                       --------------  -----  
+ 0   IsCanceled                   40060 non-null  int64  
+ 1   LeadTime                     40060 non-null  int64  
+ 2   ArrivalDateYear              40060 non-null  int64  
+ 3   ArrivalDateMonth             40060 non-null  object 
+ 4   ArrivalDateWeekNumber        40060 non-null  int64  
+ 5   ArrivalDateDayOfMonth        40060 non-null  int64  
+ 6   StaysInWeekendNights         40060 non-null  int64  
+ 7   StaysInWeekNights            40060 non-null  int64  
+ 8   Adults                       40060 non-null  int64  
+ 9   Children                     40060 non-null  int64  
+ 10  Babies                       40060 non-null  int64  
+ 11  Meal                         40060 non-null  object 
+ 12  Country                      39596 non-null  object 
+ 13  MarketSegment                40060 non-null  object 
+ 14  DistributionChannel          40060 non-null  object 
+ 15  IsRepeatedGuest              40060 non-null  int64  
+ 16  PreviousCancellations        40060 non-null  int64  
+ 17  PreviousBookingsNotCanceled  40060 non-null  int64  
+ 18  ReservedRoomType             40060 non-null  object 
+ 19  AssignedRoomType             40060 non-null  object 
+ 20  BookingChanges               40060 non-null  int64  
+ 21  DepositType                  40060 non-null  object 
+ 22  Agent                        40060 non-null  object 
+ 23  Company                      40060 non-null  object 
+ 24  DaysInWaitingList            40060 non-null  int64  
+ 25  CustomerType                 40060 non-null  object 
+ 26  ADR                          40060 non-null  float64
+ 27  RequiredCarParkingSpaces     40060 non-null  int64  
+ 28  TotalOfSpecialRequests       40060 non-null  int64  
+ 29  ReservationStatus            40060 non-null  object 
+ 30  ReservationStatusDate        40060 non-null  object 
+dtypes: float64(1), int64(17), object(13)
+memory usage: 9.5+ MB
+[2023-08-17T07:47:37.487+0000] {logging_mixin.py:150} INFO - <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 40060 entries, 0 to 40059
+Data columns (total 31 columns):
+ #   Column                       Non-Null Count  Dtype  
+---  ------                       --------------  -----  
+ 0   IsCanceled                   40060 non-null  int64  
+ 1   LeadTime                     40060 non-null  int64  
+ 2   ArrivalDateYear              40060 non-null  int64  
+ 3   ArrivalDateMonth             40060 non-null  object 
+ 4   ArrivalDateWeekNumber        40060 non-null  int64  
+ 5   ArrivalDateDayOfMonth        40060 non-null  int64  
+ 6   StaysInWeekendNights         40060 non-null  int64  
+ 7   StaysInWeekNights            40060 non-null  int64  
+ 8   Adults                       40060 non-null  int64  
+ 9   Children                     40060 non-null  int64  
+ 10  Babies                       40060 non-null  int64  
+ 11  Meal                         40060 non-null  object 
+ 12  Country                      39596 non-null  object 
+ 13  MarketSegment                40060 non-null  object 
+ 14  DistributionChannel          40060 non-null  object 
+ 15  IsRepeatedGuest              40060 non-null  int64  
+ 16  PreviousCancellations        40060 non-null  int64  
+ 17  PreviousBookingsNotCanceled  40060 non-null  int64  
+ 18  ReservedRoomType             40060 non-null  object 
+ 19  AssignedRoomType             40060 non-null  object 
+ 20  BookingChanges               40060 non-null  int64  
+ 21  DepositType                  40060 non-null  object 
+ 22  Agent                        40060 non-null  object 
+ 23  Company                      40060 non-null  object 
+ 24  DaysInWaitingList            40060 non-null  int64  
+ 25  CustomerType                 40060 non-null  object 
+ 26  ADR                          40060 non-null  float64
+ 27  RequiredCarParkingSpaces     40060 non-null  int64  
+ 28  TotalOfSpecialRequests       40060 non-null  int64  
+ 29  ReservationStatus            40060 non-null  object 
+ 30  ReservationStatusDate        40060 non-null  object 
+dtypes: float64(1), int64(17), object(13)
+memory usage: 9.5+ MB
+[2023-08-17T07:47:37.492+0000] {python.py:183} INFO - Done. Returned value was:        IsCanceled  LeadTime  ...  ReservationStatus ReservationStatusDate
+0               0       342  ...          Check-Out            2015-07-01
+1               0       737  ...          Check-Out            2015-07-01
+2               0         7  ...          Check-Out            2015-07-02
+3               0        13  ...          Check-Out            2015-07-02
+4               0        14  ...          Check-Out            2015-07-03
+...           ...       ...  ...                ...                   ...
+40055           0       212  ...          Check-Out            2017-09-10
+40056           0       169  ...          Check-Out            2017-09-10
+40057           0       204  ...          Check-Out            2017-09-12
+40058           0       211  ...          Check-Out            2017-09-14
+40059           0       161  ...          Check-Out            2017-09-14
+
+[40060 rows x 31 columns]
+[2023-08-17T07:47:37.884+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=data_cleaning_dag, task_id=data_cleaning, execution_date=20230817T074701, start_date=20230817T074736, end_date=20230817T074737
+[2023-08-17T07:47:37.919+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-17T07:47:37.999+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
