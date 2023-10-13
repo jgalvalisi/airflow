@@ -17,9 +17,8 @@ This data set contains booking information for city and resort hotels. It includ
 We will use Docker as the base tool to accomplish our ETL process through Docker images.
 
 - The first thing we’ll need is the docker-compose.yaml file taken from the official GitHub repo.
--  SSSS
--  SSSS
--  
+-  After that, connect the other services with this docker-compose.
+-  Set up Airflow in port 8080.
 
 ### Python
 
@@ -57,7 +56,7 @@ Regarding the ETL process, we dealt with some troubles when running our DAGs. In
 
 ### Superset
 
-- Execute the Superset image with Docker
+- Star a Superset instance with Docker in port 8088.
 - Access with your local host and add a Database connection.
 - When we've done that, we will be able to answer the following business questions:
 
@@ -65,6 +64,6 @@ Regarding the ETL process, we dealt with some troubles when running our DAGs. In
    - How are the prices evolution over the year considering the type of hotel?
    - Number of reservations per day
    - Share of reservations per hotel type (City Hotel or Resort Hotel)
-   - Cancellation Distributions according to different parameters (xxxxxx)   
+   - Cancellation Distributions according to different parameters  
    - Booking changes patterns
    
