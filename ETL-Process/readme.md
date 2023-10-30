@@ -61,7 +61,7 @@ Regarding the ETL process, we dealt with some troubles when running our DAGs. In
 - When we've done that, we will be able to answer the following business questions:
 
    - What are the nationalities that booked the most? And not considering people from Portugal?
-   - How are the prices evolution over the year considering the type of hotel?
+   - How have prices evolved throughout the year taking into account the type of hotel?
    - Number of reservations per day
    - Share of reservations per hotel type (City Hotel or Resort Hotel)
    - Cancellation Distributions according to different parameters  
