@@ -16,7 +16,7 @@ This data set contains booking information for city and resort hotels. It includ
 
 We will use Docker as the base tool to accomplish our ETL process through Docker images.
 
-- The first thing we’ll need is the docker-compose.yaml file taken from the official GitHub repo.
+- The first thing we’ll need is the docker-compose.YAML file taken from the official GitHub repo.
 -  After that, connect the other services with this docker-compose.
 -  Set up Airflow in port 8080.
 
