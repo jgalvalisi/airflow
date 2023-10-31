@@ -12,7 +12,7 @@ In this project, I mixed different tools in order to carry out a brief ETL proce
 This data set contains booking information for city and resort hotels. It includes information such as when the booking was made, length of stay, the number of adults, children, and/or babies, and the number of available parking spaces, among other things. All personally identifying information (PII) has been taken off from the dataset. We will perform exploratory data analysis with Python to get insight from the data.
 
 
-### Docker
+### ❇️ Docker
 
 We will use Docker as the base tool to accomplish our ETL process through Docker images.
 
@@ -20,7 +20,7 @@ We will use Docker as the base tool to accomplish our ETL process through Docker
 -  After that, connect the other services with this docker-compose.
 -  Set up Airflow in port 8080.
 
-### Python
+### ❇️ Python
 
 With Python, we will accomplish two things: 
 
@@ -33,7 +33,7 @@ With Python, we will accomplish two things:
    3) Modifying datatypes
    4) Deriving new variables
 
-### Airflow
+### ❇️ Airflow
 
 We will perform three DAGs and tasks:
 
@@ -54,7 +54,7 @@ Regarding the ETL process, we dealt with some troubles when running our DAGs. In
 <img width="1650" alt="Screenshot 2023-08-17 at 09 59 47" src="https://github.com/jgalvalisi/airflow/assets/97465207/88389e33-150a-462a-90c5-a6acc47b4a07">
 
 
-### Superset
+### ❇️ Superset
 
 - Star a Superset instance with Docker in port 8088.
 - Access with your local host and add a Database connection.
