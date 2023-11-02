@@ -1,6 +1,6 @@
 ## ETL process using Docker + Python + Airflow + Superset
 
-In this project, I mixed different tools in order to carry out a brief ETL process based on Apache Airflow, including a brief visualization analysis. In order of appearance, the resources that I have used are:
+In this project, I mixed different tools in order to carry out a brief ETL process based on Apache Airflow, including a quick visualization analysis. In order of appearance, the resources that I have used are:
 
 - Docker: Python, Airflow, and Superset are based on images on Docker
 - Python: create the necessary script to run DAGs within Airflow
